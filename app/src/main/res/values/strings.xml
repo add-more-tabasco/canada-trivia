@@ -36,5 +36,9 @@
     <string name="sharing_not_available">Sharing Not Available</string>
     <string name="android_trivia_about_header_image">Android Trivia About header image</string>
     <string name="android_mascot">Android mascot</string>
+    <string name="question_mark_header">Question Mark header</string>
+    <string name="play">Play</string>
+    <string name="next_match">Next Match</string>
+    <string name="winning_android_image">Winning Android image</string>
 
 </resources>
