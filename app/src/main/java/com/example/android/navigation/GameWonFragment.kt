@@ -37,10 +37,6 @@ class GameWonFragment : Fragment() {
                     .navigate(GameWonFragmentDirections.actionGameWonFragmentToGameFragment())
         }
         setHasOptionsMenu(true)
-//        Toast.makeText(
-//                context,
-//                "NumCorrect: ${args.numCorrect}, NumQuestions: ${args.numQuestions}",
-//                Toast.LENGTH_LONG).show()
         return binding.root
     }
 
@@ -50,7 +46,7 @@ class GameWonFragment : Fragment() {
         // check if the activity resolves
         if (null == getShareIntent().resolveActivity(activity!!.packageManager)) {
             // hide the menu item if it doesn't resolve
-            (menu.findItem(R.id.share))?.setVisible(false)
+            (menu.findItem(R.id.share))?.isVisible = false
         }
     }
     // Creating our Share Intent
