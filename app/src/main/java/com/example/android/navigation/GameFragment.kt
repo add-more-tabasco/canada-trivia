@@ -35,26 +35,26 @@ class GameFragment : Fragment() {
     // All questions must have four answers.  We'd want these to contain references to string
     // resources so we could internationalize. (or better yet, not define the questions in code...)
     private val questions: MutableList<Question> = mutableListOf(
-            Question(text = "What is Android Jetpack?",
-                    answers = listOf("all of these", "tools", "documentation", "libraries")),
-            Question(text = "Base class for Layout?",
-                    answers = listOf("ViewGroup", "ViewSet", "ViewCollection", "ViewRoot")),
-            Question(text = "Layout for complex Screens?",
-                    answers = listOf("ConstraintLayout", "GridLayout", "LinearLayout", "FrameLayout")),
-            Question(text = "Pushing structured data into a Layout?",
-                    answers = listOf("Data Binding", "Data Pushing", "Set Text", "OnClick")),
-            Question(text = "Inflate layout in fragments?",
-                    answers = listOf("onCreateView", "onActivityCreated", "onCreateLayout", "onInflateLayout")),
-            Question(text = "Build system for Android?",
-                    answers = listOf("Gradle", "Graddle", "Grodle", "Groyle")),
-            Question(text = "Android vector format?",
-                    answers = listOf("VectorDrawable", "AndroidVectorDrawable", "DrawableVector", "AndroidVector")),
-            Question(text = "Android Navigation Component?",
-                    answers = listOf("NavController", "NavCentral", "NavMaster", "NavSwitcher")),
-            Question(text = "Registers app with launcher?",
-                    answers = listOf("intent-filter", "app-registry", "launcher-registry", "app-launcher")),
-            Question(text = "Mark a layout for Data Binding?",
-                    answers = listOf("<layout>", "<binding>", "<data-binding>", "<dbinding>"))
+            Question(text = "What is Canada's national animal?",
+                    answers = listOf("the noble beaver", "reindeer", "maple syrup", "Justin Trudeau")),
+            Question(text = "Length of Canada's coastline?",
+                    answers = listOf("243,042 km", "243 km", "243,042,000 km", "24,304.2 km")),
+            Question(text = "Canada's national sport?",
+                    answers = listOf("actually Lacrosse", "of course Hockey", "Canadian Football", "ice fishing")),
+            Question(text = "Sport invented by a Canadian?",
+                    answers = listOf("all of these", "hockey", "lacrosse", "basketball")),
+            Question(text = "Canada's largest island is larger than...",
+                    answers = listOf("Japan", "Australia", "Indonesia", "all of these")),
+            Question(text = "Population density per square km of Canada's largest territory, Nunavut?",
+                    answers = listOf("0.02", "2", "20", "0.2")),
+            Question(text = "Language spoken natively by ~20% of the population?",
+                    answers = listOf("French", "Mandarin", "English", "Classical Greek")),
+            Question(text = "Canada has never fought a war against...",
+                    answers = listOf("The United Kingdom", "The United States", "South Africa", "Germany")),
+            Question(text = "Canada's highest mountain, Mt Logan, is...",
+                    answers = listOf("5959m", "4949m", "3939m", "2929m")),
+            Question(text = "Canada's population?",
+                    answers = listOf("38 Million", "13.8 million", "113.8 million", "3.8 million"))
     )
 
     lateinit var currentQuestion: Question
@@ -124,6 +124,6 @@ class GameFragment : Fragment() {
         answers = currentQuestion.answers.toMutableList()
         // and shuffle them
         answers.shuffle()
-        (activity as AppCompatActivity).supportActionBar?.title = getString(R.string.title_android_trivia_question, questionIndex + 1, numQuestions)
+        (activity as AppCompatActivity).supportActionBar?.title = getString(R.string.title_canada_trivia_question, questionIndex + 1, numQuestions)
     }
 }

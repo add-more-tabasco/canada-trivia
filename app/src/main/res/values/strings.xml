@@ -15,30 +15,30 @@
   -->
 
 <resources>
-    <string name="app_name">Android Trivia</string>
+    <string name="app_name">Canada Trivia</string>
     <string name="game_over">Game Over</string>
     <string name="try_again">Try Again?</string>
     <string name="position">Position</string>
     <string name="select_an_avatar">Select an Avatar</string>
-    <string name="android_trivia">Android Trivia</string>
-    <string name="about_text">Test your Android Dev Skills with this trivia app!\n</string>
+    <string name="canada_trivia">Canada Trivia</string>
+    <string name="about_text">Test your Canada knowledge with this trivia app!\n</string>
     <string name="rules_text">Select the answer from the options given. Each time you get an answer correct, you advance to the next question.\n\nIf you get the answer wrong, your game ends! You can return to the title screen using up or back from within the game screen, and this will also end your game.</string>
     <string name="rules">Rules</string>
     <string name="about">About</string>
     <string name="trivia_hint">Trivia Hint</string>
-    <string name="title_android_trivia_question">Android Trivia (%1$d/%2$d)</string>
-    <string name="title_about_trivia">About Trivia</string>
-    <string name="title_trivia_rules">Trivia Rules</string>
-    <string name="share_success_text">I mastered #Trivia with %1$d/%2$d correct questions!</string>
+    <string name="title_canada_trivia_question">Canada Trivia (%1$d/%2$d)</string>
+    <string name="title_about_trivia">About Canada Trivia</string>
+    <string name="title_trivia_rules">Canada Trivia Rules</string>
+    <string name="share_success_text">I mastered #CanadaTrivia with %1$d/%2$d correct questions!</string>
     <string name="submit_button">Submit</string>
     <string name="congratulations">Congratulations!</string>
     <string name="share">Share</string>
     <string name="sharing_not_available">Sharing Not Available</string>
-    <string name="android_trivia_about_header_image">Android Trivia About header image</string>
-    <string name="android_mascot">Android mascot</string>
+    <string name="canada_trivia_about_header_image">Canada Trivia About header image</string>
+    <string name="canada_mascot">Canada mascot</string>
     <string name="question_mark_header">Question Mark header</string>
     <string name="play">Play</string>
     <string name="next_match">Next Match</string>
-    <string name="winning_android_image">Winning Android image</string>
+    <string name="winning_canada_image">Winning Canada image</string>
 
 </resources>

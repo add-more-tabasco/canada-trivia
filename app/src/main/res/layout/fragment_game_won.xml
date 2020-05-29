@@ -54,7 +54,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/you_win"
-            android:contentDescription="@string/winning_android_image" />
+            android:contentDescription="@string/winning_canada_image" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
