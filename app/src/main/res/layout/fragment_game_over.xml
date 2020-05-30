@@ -26,19 +26,36 @@
         android:background="@color/gameOverBackground">
 
         <ImageView
-            android:id="@+id/gameOverFragment"
+            android:id="@+id/gameOverImage"
             android:layout_width="wrap_content"
-            android:layout_height="362dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/horizontal_margin"
+            android:layout_marginTop="@dimen/horizontal_margin"
             android:layout_marginEnd="@dimen/horizontal_margin"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/horizontal_margin"
             android:scaleType="fitCenter"
-            app:layout_constraintBottom_toTopOf="@+id/tryAgainButton"
+            app:layout_constraintBottom_toTopOf="@+id/gameOverText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_chainStyle="packed"
-            app:srcCompat="@drawable/try_again" />
+            android:contentDescription="@string/try_again_screen_graphic" /> <!--            app:srcCompat="@drawable/try_again" -->
+            />
+
+        <TextView
+            android:id="@+id/gameOverText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/horizontal_margin"
+            android:layout_marginEnd="@dimen/horizontal_margin"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gameOverImage"
+            app:layout_constraintBottom_toTopOf="@+id/tryAgainButton"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:text="@string/try_again_text"
+            android:textAppearance="@style/TextAppearance.Title"/>
 
         <Button
             android:id="@+id/tryAgainButton"
@@ -57,6 +74,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/gameOverFragment" />
+            app:layout_constraintTop_toBottomOf="@+id/gameOverText" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -25,10 +25,46 @@
         android:layout_height="match_parent"
         android:background="@color/youWinBackground">
 
+        <ImageView
+            android:id="@+id/youWinImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/horizontal_margin"
+            android:layout_marginTop="@dimen/horizontal_margin"
+            android:layout_marginEnd="@dimen/horizontal_margin"
+            android:layout_marginBottom="@dimen/horizontal_margin"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/gameWonText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:contentDescription="@string/winning_canada_image"/>
+<!--            app:srcCompat="@drawable/you_win"-->
+
+        <TextView
+            android:id="@+id/gameWonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/horizontal_margin"
+            android:layout_marginEnd="@dimen/horizontal_margin"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/youWinImage"
+            app:layout_constraintBottom_toTopOf="@+id/nextMatchButton"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:text="@string/game_won_text"
+            android:textAppearance="@style/TextAppearance.Title"/>
+
         <Button
             android:id="@+id/nextMatchButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/vertical_margin"
+            android:layout_marginTop="@dimen/vertical_margin"
+            android:layout_marginEnd="@dimen/vertical_margin"
+            android:layout_marginBottom="8dp"
             android:paddingStart="@dimen/button_padding"
             android:paddingEnd="@dimen/button_padding"
             android:text="@string/next_match"
@@ -38,23 +74,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/youWinImage" />
-
-        <ImageView
-            android:id="@+id/youWinImage"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/game_over_height"
-            android:layout_marginStart="@dimen/horizontal_margin"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="@dimen/horizontal_margin"
-            android:layout_marginBottom="@dimen/vertical_margin"
-            android:scaleType="fitCenter"
-            app:layout_constraintBottom_toTopOf="@+id/nextMatchButton"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/you_win"
-            android:contentDescription="@string/winning_canada_image" />
+            app:layout_constraintTop_toBottomOf="@+id/gameWonText" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
