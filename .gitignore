@@ -19,3 +19,5 @@
 /build
 /captures
 .externalNativeBuild
+/app/app.iml
+/.idea/
