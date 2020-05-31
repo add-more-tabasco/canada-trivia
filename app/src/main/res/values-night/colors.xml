@@ -5,6 +5,8 @@
     <color name="colorAccent">#aae487</color>
     <color name="colorBackground">#121212</color>
 
+    <color name="vectorTextFillColor">#B4C7DC</color>
+
     <color name="primaryColor">#ff634f</color>
     <color name="primaryLightColor">#ff957c</color>
     <color name="primaryDarkColor">#c52e25</color>

@@ -21,6 +21,9 @@
     <color name="colorAccent">#c52e25</color>
 
     <color name="colorBackground">#eeeeee</color>
+
+    <color name="vectorTextFillColor">#2A6099</color>
+    <color name="vectorLeafFillColor">#FF3838</color>
 <!--    optional Material-UI-based color scheme-->
     <color name="primaryColor">#ff634f</color>
     <color name="primaryLightColor">#ff957c</color>

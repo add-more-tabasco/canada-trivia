@@ -21,8 +21,11 @@
         <!-- Theme customization. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:fillColor">@color/vectorTextFillColor</item>
+
         <item name="android:fontFamily">@font/cantarell</item>
         <item name="fontFamily">@font/cantarell</item>
     </style>
