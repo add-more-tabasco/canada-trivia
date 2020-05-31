@@ -18,7 +18,19 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#7e53c5</color>
+    <color name="colorAccent">#c52e25</color>
+
+    <color name="colorBackground">#eeeeee</color>
+<!--    optional Material-UI-based color scheme-->
+    <color name="primaryColor">#ff634f</color>
+    <color name="primaryLightColor">#ff957c</color>
+    <color name="primaryDarkColor">#c52e25</color>
+    <color name="secondaryColor">#79b258</color>
+    <color name="secondaryLightColor">#aae487</color>
+    <color name="secondaryDarkColor">#49822b</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#000000</color>
+
     <color name="youWinDark">#35A571</color>
     <color name="youWinBackground">#B7F8C9</color>
     <color name="gameOverBackground">#f8bbd0</color>
