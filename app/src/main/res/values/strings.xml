@@ -44,5 +44,8 @@
     <string name="try_again_text">Sorry... you got it wrong</string>
     <string name="try_again_screen_graphic">Try again screen graphic</string>
     <string name="game_won_text">You know your maple syrup!</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
 
 </resources>

@@ -1,16 +1,13 @@
-package com.example.android.navigation
+package com.example.android.canadatrivia
 
 
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
-import android.widget.TextView
-import androidx.annotation.Nullable
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
-import com.example.android.navigation.databinding.FragmentTitleBinding
+import com.example.android.canadatrivia.databinding.FragmentTitleBinding
 
 /**
  * A simple [Fragment] subclass.
@@ -24,9 +21,11 @@ class TitleFragment : Fragment() {
             view.findNavController().navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
         }
         setHasOptionsMenu(true)
-        return binding.root}
 
-    //removed null checks from args in overridden funcs - error otherwise
+        return binding.root
+    }
+
+    //removed null checks from args in override funcs - error otherwise
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
         inflater.inflate(R.menu.overflow_menu, menu)
@@ -38,6 +37,8 @@ class TitleFragment : Fragment() {
                 view!!.findNavController())
 
     }
+
+
 }
 
 

@@ -14,16 +14,15 @@
  * limitations under the License.
  */
 
-package com.example.android.navigation
+package com.example.android.canadatrivia
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.*
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
-import com.example.android.navigation.databinding.FragmentGameWonBinding
+import com.example.android.canadatrivia.databinding.FragmentGameWonBinding
 
 
 class GameWonFragment : Fragment() {

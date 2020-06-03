@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.canadatrivia.MainActivity">
+
+    <ToggleButton
+        android:id="@+id/darkModeToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="@string/light"
+        android:textOn="@string/dark"
+        android:onClick="changeMode"
+        />
+</RelativeLayout>

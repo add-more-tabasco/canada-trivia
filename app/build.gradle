@@ -22,13 +22,15 @@ apply plugin: 'kotlin-kapt'
 
 apply plugin: 'androidx.navigation.safeargs'
 
+apply plugin: 'kotlin-android-extensions'
+
 android {
     compileSdkVersion 28
     dataBinding {
         enabled = true
     }
     defaultConfig {
-        applicationId 'com.example.android.navigation'
+        applicationId 'com.example.android.canadatrivia'
         minSdkVersion 21
         targetSdkVersion 28
         vectorDrawables.useSupportLibrary = true
@@ -44,6 +46,10 @@ android {
     }
     productFlavors {
     }
+    viewBinding {
+        enabled = true
+    }
+
 }
 
 dependencies {

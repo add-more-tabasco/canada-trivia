@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.navigation
+package com.example.android.canadatrivia
 
 import androidx.databinding.DataBindingUtil
 import android.os.Bundle
@@ -24,7 +24,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
-import com.example.android.navigation.databinding.FragmentGameBinding
+import com.example.android.canadatrivia.databinding.FragmentGameBinding
 
 class GameFragment : Fragment() {
     data class Question(
@@ -87,6 +87,8 @@ class GameFragment : Fragment() {
                     R.id.thirdAnswerRadioButton -> answerIndex = 2
                     R.id.fourthAnswerRadioButton -> answerIndex = 3
                 }
+                // reset the timer and store its last value
+
                 // The first answer in the original question is always the correct one, so if our
                 // answer matches, we have the correct answer.
                 if (answers[answerIndex] == currentQuestion.answers[0]) {
